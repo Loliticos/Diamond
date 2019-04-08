@@ -26,13 +26,13 @@ exports.run = (client, message, args, tools) => {
         }
 
         const mentionedUserID = member.id
-        const ownerID = message.guild.owner.id
+        const ownerID = msg.guild.owner.id
 
         if(mentionedUserID === ownerID) {
             return message.channel.send('Eu não posso punir esse cargo por que eu possuo um cargo menor ou igual a esse usuário')
         }
 
-        if(!args[2]) {
+        if(!args[1]) {
             return message.channel.send('**Escreva um motivo para o usuário ser punido**')
         }
 
