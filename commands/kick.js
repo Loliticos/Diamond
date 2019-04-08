@@ -40,7 +40,7 @@ exports.run = (client, message, args, tools) => {
             argsresult = args.slice(2).join(' ')
 
         member.kick(argsresult)
-        .then(user => message.channel.send(`O usuário ${user} foi punido com sucesso**`))
+        .then(user => message.channel.send(`O usuário ${user} foi punido com sucesso`))
     }
 
 module.exports.help = {
