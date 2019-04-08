@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const YouTube = require("simple-youtube-api");
-const youtube = new YouTube("AIzaSyC4WDdSL8I16siRvCqlmWhsKUr0zbj0-d0");
+const youtube = new YouTube("SUA API");
 
 exports.run = async (client, message, args) => {
 
