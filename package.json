@@ -1,0 +1,31 @@
+{
+  "name": "botjavascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cpu-stat": "^2.0.1",
+    "discord.js": "^11.4.2",
+    "enmap": "^4.8.1",
+    "fortnite": "^4.3.2",
+    "fs": "0.0.1-security",
+    "gif-to-apng": "^0.1.2",
+    "jimp": "^0.6.0",
+    "moment": "^2.24.0",
+    "moment-duration-format": "^2.2.2",
+    "mongoose": "^5.4.20",
+    "os": "^0.1.1",
+    "random-puppy": "^1.1.0",
+    "request-promise": "^4.2.4",
+    "simple-youtube-api": "^5.1.1",
+    "superagent": "^4.1.0",
+    "uuid": "^3.3.2",
+    "weather-js": "^2.0.0"
+  }
+}
