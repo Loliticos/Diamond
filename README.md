@@ -1,9 +1,9 @@
 # 💎 Diamond
-➡ Repositorio pessoal para o bot Diamond
+➡ GitHub para o bot Diamond
 
 # 💻 Comandos
 
-➡ Repositorio feito para auxiliar na criação do bot entre Walking to Depression e yRustFocker
+➡ Repositorio feito para ajudar aqueles que querem entender como funciona o discord.js vendo exemplos de comandos
 
 # ⁉ Auxiliação
 
