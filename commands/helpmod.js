@@ -19,7 +19,7 @@ module.exports.run = async (client, message, args) => {
     .addField('``diamond.``kick', 'Chuta um usuário do servidor!')
     .addField('``diamond.``anunciar', 'Faz um anúncio no servidor!')
     .addField('``diamond.``voteban', 'Faz uma votação para banir um usuário!')
-    .addField('``diamond.``voteban', 'Faz uma votação para kickar um usuário!')
+    .addField('``diamond.``votekick', 'Faz uma votação para kickar um usuário!')
     .setFooter(" Diamond#7554 © | Direitos Reservados.", client.user.displayAvatarURL)
     .setTimestamp();
 

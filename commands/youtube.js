@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const YouTube = require("simple-youtube-api");
-const youtube = new YouTube("SUA API");
+const youtube = new YouTube("AIzaSyC4WDdSL8I16siRvCqlmWhsKUr0zbj0-d0");
 
 exports.run = async (client, message, args) => {
 
@@ -8,7 +8,7 @@ exports.run = async (client, message, args) => {
       .then(results => {
 
     const ytEmbed = new Discord.RichEmbed()
-    .setAuthor(`<:diamondyt:564156778749624331> | Resultados de: ${args}`.split(',').join(' '), "https://cdn.discordapp.com/attachments/494189179383578624/503679656264990751/Sem_Titulo-1.png")
+    .setAuthor(`Resultados de: ${args}`.split(',').join(' '), "https://cdn.discordapp.com/attachments/494189179383578624/503679656264990751/Sem_Titulo-1.png")
     .setImage(results[0].thumbnails.high.url)
     .setColor('RANDOM') 
     .addField('<:Seta:544565700170350603> | Nome do canal', results[0].channel.title, true)

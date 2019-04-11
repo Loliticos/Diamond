@@ -7,7 +7,7 @@ module.exports.run = (client, message, args) => {
     .setColor('RANDOM')
     .addField('Sistemas quê serão adicionados:', 'Sistema de MultiLinguagens')
     .addField('Sistema de Alterar Prefixo Via Chat', 'Sistema de Logs')
-    .addField('Sistema de Setwelcome, saída, e Lista de Banimentos!', 'AutoRole')
+    .addField('Sistema de Lista de Banimentos!', 'Correção de Comandos (Erros Ortográficos, códigos etc)!')
     .setFooter(" Diamond#7554 © | Direitos Reservados.", client.user.displayAvatarURL)
     .setTimestamp();
 

@@ -8,7 +8,7 @@ module.exports.run = async (client, message, args) => {
     var embed = new Discord.RichEmbed()
     .setImage(body.url)
     .setColor('RANDOM')
-    .addField('<a:bongocat:544233229469876224>| Gatinhuu!! Meow! ')
+    .addField('<a:bongocat:544233229469876224>| Gatinhuu!!',  'Meow Meow! ')
     .setFooter(" Diamond#7554 © | Direitos Reservados.", client.user.displayAvatarURL)
     .setTimestamp(new Date())
     message.channel.send(embed);

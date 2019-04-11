@@ -15,6 +15,8 @@ module.exports.run = async (client, message, args) => {
     .setTitle('Comandos de Pornográfia (NSFW)! Forma de Utilizar: **diamond.**``comando`` ')
     .setColor('RANDOM')
     .addField('``diamond.``anal', 'Envia foto/gif de sexo anal!')
+    .addField('``diamond.``gifporn', "Envia um gif pornô!")
+    .addField('``diamond.``ass', 'Envia foto de bundas!')
     .addField('``diamond.``pussy', 'Envia foto de vaginas (bucetas)')
     .setFooter(" Diamond#7554 © | Direitos Reservados.", client.user.displayAvatarURL)
     .setTimestamp();

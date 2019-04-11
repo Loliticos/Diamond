@@ -8,7 +8,7 @@ module.exports.run = async (client, message, args) => {
     let pEmbed = new Discord.RichEmbed()
         .setTitle("🔔 Pong:")
         .addField('💻 API: ', Math.floor(client.ping) + 'ms')
-        .addField('💻Latência:', `${clientping}` + 'ms')
+        .addField('📡Latência:', `${clientping}` + 'ms')
         .addField(`📶Hearthbeat:`,  `${heartbeat}` + 'ms')
         .setColor("RANDOM")
         .setFooter(" Diamond#7554 © | Direitos Reservados.", client.user.displayAvatarURL)

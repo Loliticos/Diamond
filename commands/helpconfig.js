@@ -14,9 +14,10 @@ module.exports.run = async (client, message, args) => {
     let embed = new Discord.RichEmbed()
     .setTitle('Comandos de Configuração! Forma de Utilizar: **diamond.**``comando`` ')
     .setColor('RANDOM')
-    .addField('``diamond.``setwelcome', 'Seta um canal de bem-vindo! (Em breve).')
-    .addField('``diamond.``setsaida', 'Seta um canal de saída! (Em breve).')
+    .addField('``diamond.``setwelcome', 'Seta um canal de bem-vindo! (Manutenção).')
+    .addField('``diamond.``setsaida', 'Seta um canal de saída! (Manutenção).')
     .addField('``diamond.``setprefix', 'Seta um novo prefixo para mim! (Em breve).')
+    .addField('``diamond.``autorole', 'Seta um cargo para ser dado quando um membro entrar!')
     .addField('``diamond.``setlogs', 'Seta um Canal Para Mostrar Mensagens Apagadas/Editadas (Em breve).' )
     .setFooter(" Diamond#7554 © | Direitos Reservados.", client.user.displayAvatarURL)
     .setTimestamp();

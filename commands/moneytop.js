@@ -18,7 +18,7 @@ exports.run = (client, message, args) => {
                     return client.users.get(a.id)
                 })
                 var desenvolvedores = ["439928694610460672"]
-                var moneytop = "\n" + position.slice(0, 10).map((a, posicao) => "**" + (posicao + 1) + "** " + client.users.get(a.id).username + " - **" + Number(a.coins).toLocaleString() + "** " + (desenvolvedores.includes(a.id) ? "<:trophy1lugar:553698689319829504>" : "")).join("\n") + "";
+                var moneytop = "\n" + position.slice(0, 10).map((a, posicao) => "**" + (posicao + 1) + "** " + client.users.get(a.id).username + " - **" + Number(a.coins).toLocaleString() + "** " + (desenvolvedores.includes(a.id) ? "" : "")).join("\n") + "";
                 message.channel.sendMessage({
                     "embed": {
                         "description": "Top Usuário com Mais Coins:\nㅤ\n" + moneytop,

@@ -7,7 +7,7 @@ module.exports.run = async (client, message, args) => {
     
     var embed = new Discord.RichEmbed()
     .setImage(body.url)
-    .addField('<a:cachorrin:543808946964791301> | Cachorrinhu! Au Au!')
+    .addField('<a:cachorrin:543808946964791301> | Cachorrinhu!', 'Au Au!')
     .setColor('RANDOM')
     .setTimestamp(new Date())
     message.channel.send(embed);

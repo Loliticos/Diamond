@@ -17,6 +17,7 @@ module.exports.run = async (client, message, args) => {
     .addField('``diamond.``emojis', 'Mostra os emojis do servidor!')
     .addField('``diamond.``dog', 'Envia foto de cachorros!')
     .addField('``diamond.``cat', 'Envia foto de gatos!')
+    .addField('``diamond.``spotify', 'Veja o quê o seu amigo (ou você) está ouvindo no spotify!')
     .addField('``diamond.``google', 'Faz uma pesquisa no navegador Google!')
     .addField('``diamond.``mchead', 'Mostra a cabeça de um jogador de Minecraft!')
     .addField('``diamond.``mcstatus', 'Verifica os setores da Mojang!')

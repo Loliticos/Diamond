@@ -49,7 +49,7 @@ exports.run = (client, message, args) => {
         })
     })
 } catch(err) {
-    message.channel.send(`❌ **${message.author.tag}**, Não consegui achar este usuário!`)
+    message.channel.send(`❌ **${message.author.tag}**, não consegui achar este usuário! Mencione-o!`)
 }
 }
 exports.help = {
