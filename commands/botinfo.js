@@ -42,7 +42,7 @@ module.exports.run = async (client, message, args) => {
     .setTitle(`Informações de ${client.user.username}!`)
     .setColor("RANDOM")
     .setThumbnail(icon)
-    .addField('<:IconServerOwner:553592966762201108> | Criador do Bot', 'yRustFocker#6420 e Walking to depression#4543', true)
+    .addField('<:IconServerOwner:553592966762201108> | Criador do Bot', '<@439928694610460672> e <@532294395655880705>', true)
     .addField('<:IconServerOwner:553592966762201108> | Nome do Bot', client.user.username, true)
     .addField('<:membros:544232236036128768> | Total de Servidores (Guilds)', client.guilds.size, true)
     .addField('<:MoreUsers:553593545991389186> | Total de Usuários (Membros)', client.users.size, true)

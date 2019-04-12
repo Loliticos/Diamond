@@ -24,6 +24,7 @@ module.exports.run = async (client, message, args) => {
     .addField('``diamond.``nitro', 'Pega seu avatar e transforma em nitro! XD')
     .addField('``diamond.``ship', 'Shippa 2 usuários!')
     .addField('``diamond.``youtube', 'Pesquisa um vídeo na plataforma Youtube!')
+    .addField('``diamond.``gay', 'Verifique o quanto você é gay!')
     .addField('``diamond.``ball', 'Faz uma pergunta pra mim e eu respondo!') 
     .setFooter(" Diamond#7554 © | Direitos Reservados.", client.user.displayAvatarURL)
     .setTimestamp();
