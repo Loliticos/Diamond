@@ -31,7 +31,7 @@ exports.run = (client, message, args) => {
                     } else {
                         message.channel.sendMessage({
                             "embed": {
-                                "description": "ㅤ   **❄ Saida ❄**ㅤ   \nㅤ\n**Como usar:**\n```diamond.setsaida set <mensagem de saída>```",
+                                "description": "ㅤ   **❄ Saida ❄**ㅤ   \nㅤ\n**Como usar:**\n```diamond.setsaida set <mensagem de saída>gg```",
                                 "color": 55512,
                                 "timestamp": new Date(),
                                 "footer": {

@@ -6,13 +6,13 @@ exports.run = async (client, message, args) => {
 
 let user;
 
-    if (message.mentions.users.first()) {
-      user = message.mentions.users.first();
+    if (message.mentions.users.first()  || client.users.get(args.join(' '))) {
+      user = message.mentions.users.first() || client.users.get(args.join(' '));
     } else if(args[0]) {
         user = client.users.get(args[0]);
     }
     
-    if (args[0] == null) {return message.author.send(`**${message.author.username}**, você deve mencionar um bot!`)}
+    if(!user) return message.reply(`**${message.author.username}**, você deve específicar o id do bot ou mencionar ele!`)
   const embed = new Discord.RichEmbed()
   .addField(`<:botTag:553606575143518218> |  Convite do(a) bot ${user.username} :`, `[Sem Permissões](https://discordapp.com/oauth2/authorize?client_id=${user.id}&scope=bot&permissions=0)
 [Permissão Administrador](https://discordapp.com/oauth2/authorize?client_id=${user.id}&scope=bot&permissions=8)
