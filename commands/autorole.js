@@ -12,7 +12,7 @@ exports.run = (client, message, args) => {
     var desenvolvedores = ["439928694610460672", "532294395655880705"]
 
     if (!desenvolvedores.includes(message.author.id) & !message.member.hasPermission(["MANAGE_ROLES_OR_PERMISSIONS"]))
-    return message.reply("**Você não tem permissão para setar um autorole!**")
+    return message.reply(":x: | **Você não tem permissão para setar um autorole!**")
 
     database.Guilds.findOne({
         "_id": message.guild.id
@@ -38,7 +38,7 @@ exports.run = (client, message, args) => {
 
                 if (message.content.startsWith("diamond.autorole remove")) {
                         if (!documento.autorole) {
-                            message.reply("**Não há um autorole definido neste servidor!**");
+                            message.reply(":x: | **Não há um autorole definido neste servidor!**");
                         } else {
                             documento.autoroleid = "Nenhum"
                             documento.autorole = false

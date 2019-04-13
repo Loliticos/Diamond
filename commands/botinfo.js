@@ -50,7 +50,7 @@ module.exports.run = async (client, message, args) => {
     .addField('<:nodejs:553606096284287026> | Versão do Node', `${process.version}`, true)
     .addField('<:memory_slot:553606269806706701> | Memória Usada', `${(((process.memoryUsage().heapUsed)/1024)/1024).toFixed(0)}MBs de RAM`, true)
     .addField('<:uptime:544233623499440156> | Uptime', `${time(client.uptime)}`)
-    .addField('<a:digitando:545415741294379033> | Links', 'Meu Convite: [Link Aqui](https://discordapp.com/oauth2/authorize?client_id=561359827331186688&scope=bot&permissions=8)\nMeu Servidor de Suporte: [Link Aqui](https://discordapp.com/invite/zs2kHbF)\nVote em Mim: [Link Aqui](https://discordbots.org/bot/561359827331186688)')
+    .addField('<a:digitando:545415741294379033> | Links', 'Meu Convite: [Link Aqui](https://discordapp.com/oauth2/authorize?client_id=561359827331186688&scope=bot&permissions=8)\nMeu Servidor de Suporte: [Link Aqui](https://discord.gg/D7GvCMc)\nVote em Mim: [Link Aqui](https://discordbots.org/bot/561359827331186688)')
     .setFooter(" Diamond#7554 © | Direitos Reservados.", client.user.displayAvatarURL)
     .setTimestamp();
 

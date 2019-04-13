@@ -14,10 +14,13 @@ module.exports.run = async (client, message, args) => {
     let embed = new Discord.RichEmbed()
     .setTitle('Comandos de Pornográfia (NSFW)! Forma de Utilizar: **diamond.**``comando`` ')
     .setColor('RANDOM')
-    .addField('``diamond.``anal', 'Envia foto/gif de sexo anal!')
-    .addField('``diamond.``gifporn', "Envia um gif pornô!")
-    .addField('``diamond.``ass', 'Envia foto de bundas!')
-    .addField('``diamond.``pussy', 'Envia foto de vaginas (bucetas)')
+    .addField('``diamond.``anal', 'Envia foto/gifs de sexo anal!')
+    .addField('``diamond.``gifporn', "Envia um gifs pornô!")
+    .addField('``diamond.``ass', 'Envia foto/gifs de bundas!')
+    .addField('``diamond.``holo', 'Envia foto/gifs de "hentais" com roupas! XD')
+    .addField('``diamond.``hentai', 'Envia foto/gifs de desenhos pornográficos!' )
+    .addField('``diamond``4k', 'Envia foto/gifs de mulheres nuas/sexo aleatóriamente!')
+    .addField('``diamond.``pussy', 'Envia foto/gifs de vaginas (bucetas)!')
     .setFooter(" Diamond#7554 © | Direitos Reservados.", client.user.displayAvatarURL)
     .setTimestamp();
     

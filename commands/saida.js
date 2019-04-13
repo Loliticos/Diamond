@@ -19,11 +19,11 @@ exports.run = (client, message, args) => {
 
             if (!razaou.length < 1) {
 
-                if (message.content.startsWith("diamond.setsaida set")) {
+                if (message.content.startsWith("diamond.saida set")) {
                     if (!razaod.length < 1) {
 
                         documento.byebyechannel = message.channel.id
-                        documento.byebyemsg = message.content.replace("diamond.setsaida set ", "");
+                        documento.byebyemsg = message.content.replace("diamond.saida set ", "");
                         documento.byebye = true
                         documento.save();
                         message.reply("**Canal de saída setado com sucesso!**");
@@ -46,7 +46,7 @@ exports.run = (client, message, args) => {
                     }
                 }
 
-                if (message.content.startsWith("diamond.setsaida remove")) {
+                if (message.content.startsWith("diamond.saida remove")) {
                     if (!documento.byebye) {
                         message.reply("**Não há um canal de saída definido neste servidor!**");
                     } else {
@@ -58,7 +58,7 @@ exports.run = (client, message, args) => {
                     }
                 }
 
-                if (message.content.startsWith("diamond.setsaida info")) {
+                if (message.content.startsWith("diamond.saida info")) {
                     if (!documento.byebye) {
                         message.channel.sendMessage({
                             "embed": {
