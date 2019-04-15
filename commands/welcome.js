@@ -47,7 +47,7 @@ exports.run = (client, message, args) => {
           }
 
           if (message.content.startsWith("diamond.welcome remove")) {
-              if (!documento.byebye) {
+              if (!documento.welcome) {
                   message.reply("**Não há um canal de welcome definido neste servidor!**");
               } else {
                   documento.welcome = false
@@ -59,7 +59,7 @@ exports.run = (client, message, args) => {
           }
 
           if (message.content.startsWith("diamond.welcome info")) {
-              if (!documento.byebye) {
+              if (!documento.welcome) {
                   message.channel.sendMessage({
                       "embed": {
                           "description": "ㅤ   **❄ Welcome ❄**ㅤ   \nㅤ\n**Como usar:**\n```{member} menciona o usuário\n{guild} fala o nome do servidor\n{name} fala o nome do usuário```",
@@ -77,7 +77,7 @@ exports.run = (client, message, args) => {
               } else {
                 message.channel.sendMessage({
                     "embed": {
-                        "description": "ㅤ   **❄ Welcome ❄**ㅤ   \nㅤ\n**Mensagem:** " + documento.byebyemsg + "\n**Canal de Welcome** <#" + documento.byebyechannel + ">\nㅤ\n**Como usar:**\n```{member} menciona o usuário\n{guild} fala o nome do servidor\n{name} fala o nome do usuário```",
+                        "description": "ㅤ   **❄ Welcome ❄**ㅤ   \nㅤ\n**Mensagem:** " + documento.welcomemsg + "\n**Canal de Welcome** <#" + documento.welcomechannel + ">\nㅤ\n**Como usar:**\n```{member} menciona o usuário\n{guild} fala o nome do servidor\n{name} fala o nome do usuário```",
                         "color": 55512,
                         "timestamp": new Date(),
                         "footer": {

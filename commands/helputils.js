@@ -28,6 +28,7 @@ module.exports.run = async (client, message, args) => {
     .addField('``diamond.``servidores', 'Verifica em quais servidores eu estou!')
     .addField('``diamond.``novidadades', 'Verifica as Novidades!')
     .addField('``diamond.``ping', 'Verifica minha latência!')
+    .addField('``diamond.sugerir``', 'Sugere algo para ser implementado em mim!')
     .setFooter(" Diamond#7554 © | Direitos Reservados.", client.user.displayAvatarURL)
     .setTimestamp();
     

@@ -19,6 +19,11 @@ module.exports.run = async (client, message, args) => {
 
   let createdAtRaw = guild.createdAt.toDateString();
   let createdAt = createdAtRaw.split(" ");
+
+  let online = message.guild.members.filter(a => a.presence.status == "online").size;
+  let ocupado = message.guild.members.filter(a => a.presence.status == "dnd").size;
+  let ausente = message.guild.members.filter(a => a.presence.status == "idle").size;
+  let offline = message.guild.members.filter(a => a.presence.status == "offline").size;
   
 
   let textChannels = message.guild.channels.filter(c => c.type === 'text').size;
@@ -33,18 +38,18 @@ module.exports.run = async (client, message, args) => {
     .setTitle(`Informações do Servidor  **${message.guild.name}** | **${message.guild.id}**`)
     .setColor("RANDOM")
     .setThumbnail(icon)
-    .addField('<:Seta:544565700170350603> | Nome do Servidor', guild.name, true)
-    .addField('<:iduserinfo:553660521983770658> | ID do Servidor', guild.id, true)
-    .addField('<:IconServerOwner:553592966762201108> | Dono do Servidor', `<@${message.guild.owner.id}>`, true)
+    .addField('<:Seta:544565700170350603> | Nome do Servidor', guild.name, false)
+    .addField('<:iduserinfo:553660521983770658> | ID do Servidor', guild.id, false)
+    .addField('<:IconServerOwner:553592966762201108> | Dono do Servidor', `<@${message.guild.owner.id}>`, false)
     .addField('<:Data:553592338652332044> | Criado em', moment(message.guild.createdAt).format(`LL`), true)
     .addField("<:Data:553592338652332044> | Entrei Aqui em", moment(message.member.joinedAt).format(`LL`), false)
-    .addField('<:regiao:553592816199270410> | Região do Servidor', guild.region.toUpperCase(), true)
-    .addField('<:MoreUsers:553593545991389186> | Membros', message.guild.members.filter(member => !member.user.bot).size, false)
-    .addField('🤖 | Bots', message.guild.members.filter(member => member.user.bot).size, true)
-    .addField('<:Verificado:553592475315601430> | Nível de Verificação', veriToText(guild.verificationLevel), true)
+    .addField('<:regiao:553592816199270410> | Região do Servidor', guild.region.toUpperCase(), false)
+    .addField('🤖 | Bots', message.guild.members.filter(member => member.user.bot).size, false)
+    .addField('<:Verificado:553592475315601430> | Nível de Verificação', veriToText(guild.verificationLevel), false)
+    .addField(`<:MoreUsers:553593545991389186> | Membros `, `<:online:566384224391659521> | Online: ${online}\n<:idle:566383961727696907> | Ausente: ${ausente}\n <:dnd:566384298324787203>| Ocupado: ${ocupado}\n<:offline:566385242839973888> | Offline: ${offline}`, false)
     .addField('🎤 | Canais de Voz', textChannels, false)
-    .addField('🎹 | Canais de Texto', voiceChannels, true)
-    .addField('<:MoreUsers:553593545991389186> | Quantidade de Membros', message.guild.memberCount, true)
+    .addField('🎹 | Canais de Texto', voiceChannels, false)
+    .addField('<:MoreUsers:553593545991389186> | Quantidade de Membros (Ao Todo)', message.guild.memberCount, false)
     .setFooter(" Diamond#7554 © | Direitos Reservados.", client.user.displayAvatarURL)
     .setTimestamp();
 

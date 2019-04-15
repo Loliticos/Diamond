@@ -26,6 +26,7 @@ module.exports.run = async (client, message, args) => {
     .addField('``diamond.``youtube', 'Pesquisa um vídeo na plataforma Youtube!')
     .addField('``diamond.``gay', 'Verifique o quanto você é gay!')
     .addField('``diamond.``ball', 'Faz uma pergunta pra mim e eu respondo!') 
+    .addField('``diamond.``ascii', 'Digite em um textão!')
     .setFooter(" Diamond#7554 © | Direitos Reservados.", client.user.displayAvatarURL)
     .setTimestamp();
     
