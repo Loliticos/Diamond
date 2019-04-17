@@ -3,6 +3,7 @@ exports.run = async (client, message, args, color, prefix) => {
     const Discord = require('discord.js')
 
     if (message.author.id !== '439928694610460672' && message.author.id !== '532294395655880705') return;
+    if (message.content.includes("token")) return message.reply("VOCÊ TEM PROBLEMA? **CARAIO**");
     try {
         let nylindao = args.join(" ");
         let nytotoso = eval(nylindao);

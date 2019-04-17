@@ -48,6 +48,8 @@ module.exports.run = async (client, message, args) => {
     .addField('<:Verificado:553592475315601430> | Nível de Verificação', veriToText(guild.verificationLevel), false)
     .addField(`<:MoreUsers:553593545991389186> | Membros `, `<:online:566384224391659521> | Online: ${online}\n<:idle:566383961727696907> | Ausente: ${ausente}\n <:dnd:566384298324787203>| Ocupado: ${ocupado}\n<:offline:566385242839973888> | Offline: ${offline}`, false)
     .addField('🎤 | Canais de Voz', textChannels, false)
+    .addField('😀 | Emojis', `${message.guild.emojis.size}`, false)
+    .addField('<:pasta:545046846247272478> | Cargos', `${message.guild.roles.size}`, false)
     .addField('🎹 | Canais de Texto', voiceChannels, false)
     .addField('<:MoreUsers:553593545991389186> | Quantidade de Membros (Ao Todo)', message.guild.memberCount, false)
     .setFooter(" Diamond#7554 © | Direitos Reservados.", client.user.displayAvatarURL)

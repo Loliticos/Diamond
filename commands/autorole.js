@@ -24,7 +24,7 @@ exports.run = (client, message, args) => {
 
                 if (message.content.startsWith("diamond.autorole set")) {
 
-                    if (message.mentions.roles.size < 1) return message.reply("**Mencione o cargo que deseja setar auto-role!**");
+                    if (message.mentions.roles.size < 1) return message.reply(":x: | **Mencione o cargo que deseja setar auto-role!**");
                     if(message.mentions.roles.first().position >= message.guild.members.get(client.user.id).highestRole.position){
                         message.reply("**Não tenho permissão para dar esse cargo. :confused:**");
                     } else {

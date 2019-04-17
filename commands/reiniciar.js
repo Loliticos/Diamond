@@ -19,7 +19,7 @@ const Discord = require("discord.js");
             .setTimestamp();
             message.channel.send(embed)
             .then(msg => client.destroy(true))
-            .then(() => client.login('Token do Diamond'));
+            .then(() => client.login('NTYxMzU5ODI3MzMxMTg2Njg4.XJ7VkA.55mBsG-sVpryjHW_TCsQEsf7ZOs'));
          }
 
     client.on('ready', () => {

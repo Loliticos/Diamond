@@ -1,8 +1,8 @@
 exports.run = (client, message, args) => {
   try{
   let messagecount = parseInt(args[0]) || parseInt(args[1])
-  if (!message.member.hasPermission(["MANAGE_MESSAGES"])) 
-  return message.channel.send(`❌ **${message.author.tag}**, Eu não tenho a permissão **MANAGE_MESSAGES** para limpar mensagens!`).then(msg => msg.delete(5000))
+  if (!message.member.hasPermission(["MANAGE_MESSAGES"]))
+  return message.channel.send(`❌ **${message.author.tag}**, você não possuí a permissão **MANAGE_MESSAGES** para limpar mensagens!`).then(msg => msg.delete(5000))
   if(messagecount >= 100){
       message.channel.send(`❌ **${message.author.tag}**, Eu não posso excluir mais de 100 mensagens!`).then(msg => msg.delete(5000))
   }else if(args[1]){
