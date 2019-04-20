@@ -15,6 +15,22 @@ mongoose.connect("mongodb://yrustfocker1:lucas123@ds133556.mlab.com:33556/botjav
             type: Number,
             default: 0
         },
+        comum :{
+          type: Number,
+          default: 0
+      },
+      raro :{
+          type: Number,
+          default: 0
+      },
+      epico :{
+          type: Number,
+          default: 0
+      },
+      lendario :{
+          type: Number,
+          default: 0
+      },
         xp: {
             type: Number,
             default: 0
@@ -44,6 +60,22 @@ mongoose.connect("mongodb://yrustfocker1:lucas123@ds133556.mlab.com:33556/botjav
           type: String,
           default: 'Nenhum'
         },
+        desc: {
+          type: String,
+          default: "Use diamond.config desc <descrição do servidor> para setar uma descrição."
+      },
+      box: {
+        type: Boolean,
+        default: true
+    },
+    caixa: {
+        type: Boolean,
+        default: false
+    },
+    caixatipo: {
+        type: String,
+        default: "Comum"
+    },
         welcomemsg: {
           type: String,
           default: 'Nenhuma'
