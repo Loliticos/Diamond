@@ -346,4 +346,4 @@ client.on('ready', () => {
   });
 
 
-  client.login("NTYxMzU5ODI3MzMxMTg2Njg4.XLts0Q.33SKv88ZhViStRyA1tXBnlQa7TM"); 
+  client.login("Your token here"); 
