@@ -3,7 +3,7 @@ const Client = new Discord.Client()
 module.exports.run = (client, message, args) => {
 
 
-Client.login('NDQ2Nzg3MDAzNDM0OTI2MTE5.D3Qtmg.SXmn9ZCL6Vf5a0KE-hiHjTBETd8').then(async () => {
+Client.login('gdsgds').then(async () => {
     console.log(`Ligado em ${Client.user.tag}`)
 })
 Client.on('message', async message => {
