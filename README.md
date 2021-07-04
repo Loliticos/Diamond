@@ -12,3 +12,7 @@
 <a href="https://discordbots.org/bot/561359827331186688" >
   <img src="https://discordbots.org/api/widget/561359827331186688.svg" alt="Diamond" />
 </a>
+
+# Atenção
+
+Este repositório e o bot Diamond não está sendo mais mantido ou atualizado, só está aqui para nos lembrar o quão ruim o código do Diamond era.
