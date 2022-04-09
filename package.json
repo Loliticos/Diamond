@@ -17,7 +17,7 @@
     "fs": "0.0.1-security",
     "gif-to-apng": "^0.1.2",
     "jimp": "^0.6.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "moment-duration-format": "^2.2.2",
     "mongoose": "^5.4.20",
     "os": "^0.1.1",
