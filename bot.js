@@ -26,7 +26,7 @@ fs.readdir("./events/", (err, files) => {
 //WATCHING = ASSISTINDO
 
 client.on('message', message => {
-  if(message.content.startsWith('<@561359827331186688>')) {
+  if(message.content.startsWith(`<@${client.user.id}>`)) {
       const embed = new Discord.RichEmbed()
 
       .setTitle(`Olá ${message.author.tag} está perdido?`)
@@ -50,7 +50,10 @@ client.on('guildMemberAdd', member => {
 
               var bemvindo = documento.welcomemsg
               if(member.guild.channels.get(documento.welcomechannel)) {
-                  client.guilds.get(member.guild.id).channels.get(documento.welcomechannel).sendMessage(bemvindo.replace(/{member}/g, `<@${member.id}>`).replace(/{guild}/g, `${member.guild.name}`).replace(/{name}/g, `${member.username}`));
+                  client.guilds.get(member.guild.id).channels.get(documento.welcomechannel)
+                    .send(bemvindo.replace(/{member}/g, `<@${member.id}>`)
+                        .replace(/{guild}/g, `${member.guild.name}`)
+                        .replace(/{name}/g, `${member.username}`));
               } else {}
 
           } else {}
@@ -81,7 +84,7 @@ client.on('guildMemberRemove', member => {
 
               var bbbyebye = documento.byebyemsg
               if(member.guild.channels.get(documento.byebyechannel)) {
-                  client.guilds.get(member.guild.id).channels.get(documento.byebyechannel).sendMessage(bbbyebye.replace(/{member}/g, `<@${member.id}>`).replace(/{guild}/g, `${member.guild.name}`).replace(/{name}/g, `${member.username}`));
+                  client.guilds.get(member.guild.id).channels.get(documento.byebyechannel).send(bbbyebye.replace(/{member}/g, `<@${member.id}>`).replace(/{guild}/g, `${member.guild.name}`).replace(/{name}/g, `${member.username}`));
               } else {}
 
           } else {}
